@@ -1,0 +1,355 @@
+*{
+  margin: 0;
+  padding: 0;
+ 
+}
+
+body{
+  background: linear-gradient(135deg, #000000, #333333);
+
+}
+
+
+
+.card{
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  min-height: 370px;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #ff4500, #ffdb4d, #ff0000);
+  box-shadow: 5px 5px 6px #dadada,
+               -5px -5px 6px #f6f6f6;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+
+@media (min-width:768px){
+
+  .card {
+    padding: 20px;
+    width: 330px;
+  
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #ff4500, #ffdb4d, #ff0000);
+    box-shadow: 5px 5px 6px #dadada,
+                 -5px -5px 6px #f6f6f6;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+}
+
+
+
+
+
+.contenedor{
+  display: grid;
+  grid-template-columns: 1fr ;
+  margin: 50px 0px;
+  gap: 20px;
+}
+
+@media (min-width:768px){
+  .contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    margin: 20px 0px;
+    gap: 20px;
+  }
+}
+
+
+
+
+
+.card:hover {
+  translate: 0 -10px;
+}
+
+.card-title {
+  font-size: 25px;
+  font-weight: 600;
+  
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ text-transform: uppercase;
+  color: #ff0000;
+  margin: 15px 0 0 10px;
+}
+
+.card-image {
+  min-height: 170px;
+  background-color: #c9c9c9;
+  border-radius: 15px;
+  box-shadow: inset 8px 8px 10px #c3c3c3,
+            inset -8px -8px 10px #cfcfcf;
+}
+.image{
+  margin: 0 auto;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+.card-body {
+  margin: 13px 0 0 10px;
+  color: rgb(31, 31, 31);
+  font-size: 15px;
+  font-family: 'Kalam', cursive;
+}
+
+.footer {
+  float: right;
+  margin: 28px 0 0 18px;
+  font-size: 13px;
+  color: #ff0000;
+}
+
+.by-name {
+  font-weight: 700;
+}
+
+
+.image_add{
+  position: fixed;
+  right: 20px; /* Ajusta la distancia desde el borde derecho de la pantalla */
+  bottom: 20px; /* Ajusta la distancia desde el borde inferior de la pantalla */
+  cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+  z-index: 999;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
+
+
+
+
+.dragon-ball-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+
+  background: linear-gradient(135deg, #000000, #333333);
+
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.dragon-ball-form label {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.h1{
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+  font-family: 'Kalam', cursive;
+}
+
+.background{
+  
+
+  background: linear-gradient(to right, #000000de, #00000065), url('https://akamai.sscdn.co/uploadfile/letras/fotos/f/7/0/f/f70fad3b9c9a59c6507f6762820cdee9.jpg');
+  background-size: cover;
+  background-position: center;
+  
+ }
+
+.dragon-ball-form input[type="text"],
+.dragon-ball-form input[type="url"],
+.dragon-ball-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 16px;
+}
+
+.dragon-ball-form input[type="checkbox"] {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.dragon-ball-form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffcc00;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.dragon-ball-form button:hover {
+  background-color: #ffdb4d;
+}
+
+
+/* card individual */ 
+
+.character-card {
+  background-color: linear-gradient(135deg, #000000, #333333);
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.character-card:hover {
+  transform: translateY(-5px);
+}
+
+.character-details {
+  display: flex;
+}
+
+.character-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.character-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.character-info {
+  flex: 2;
+  padding: 20px;
+}
+
+.character-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.character-info p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.details > div {
+  flex: 0 0 50%;
+  margin-bottom: 10px;
+}
+
+.details span {
+  display: block;
+  font-size: 14px;
+}
+
+.details span:first-child {
+  color: #f39c12;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+
+/* menu */ 
+
+
+.menu {
+  background-color: #1f1f1f;
+  padding: 10px;
+}
+
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu-item {
+  margin-right: 20px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu-item a:hover {
+  color: #db6c09;
+}
+
+
+/*intro*/
+
+
+.intro-section {
+ 
+  background: linear-gradient(to right, #000000de, #00000065), url('https://c4.wallpaperflare.com/wallpaper/109/220/12/dragon-ball-dragon-ball-super-ultra-instinct-son-goku-wallpaper-preview.jpg');
+
+
+
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.intro-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.intro-title {
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  font-size: 24px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+}
+
+.intro-button {
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.intro-button:hover {
+  background-color: #db6c09;
+}
+
+.h1{
+  text-align: center;
+  font-size: 2.3rem;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+
+}
