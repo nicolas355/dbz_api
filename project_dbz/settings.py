@@ -148,8 +148,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #cors autentificacion
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  
-    "https://dbz-api.vercel.app/",  
-    
+    "https://dbz-api.vercel.app",  
+   
 ]
 
 
